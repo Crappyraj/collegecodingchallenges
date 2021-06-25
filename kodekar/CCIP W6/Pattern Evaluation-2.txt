@@ -1,0 +1,50 @@
+Print the Pattern as given in sample cases.
+
+Input Format
+
+Enter the value ‘n’.
+
+Constraints
+
+1<= n <= 10
+
+Output Format
+
+Print respective pattern.
+
+Sample Input 0
+
+3
+Sample Output 0
+
+A
+AB
+ABC
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n,i,j,a=65;
+       
+        n=sc.nextInt();
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+                System.out.print((char)(a+j));
+               
+            }
+            
+            
+                System.out.println();
+            
+}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

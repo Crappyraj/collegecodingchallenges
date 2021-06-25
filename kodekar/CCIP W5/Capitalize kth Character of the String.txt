@@ -1,0 +1,100 @@
+Capitalize the kth character of string
+
+You need to capitalise the kth character of the input string.
+
+Input Format
+
+Input a string of length ‘n’ and an integer ‘k’ in two different lines.
+
+Constraints
+
+1 <= n <=20 1 <= k <=20
+
+Output Format
+
+Print the string after capitalize the character.
+
+Sample Input 0
+
+2
+kiet
+Sample Output 0
+
+kIet
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args)throws IOException {
+        InputStreamReader read=new InputStreamReader(System.in);
+        BufferedReader in=new BufferedReader(read);
+        String st,st1,st2,st3,st4;;st1="";st2="";st3="";st4="";
+        char c,a;
+        int k,l;
+              k=Integer.parseInt(in.readLine());
+        st=in.readLine();
+        int l1=st.length();
+  if(k<l1)
+  {
+        
+        st1=st.substring(0,k-1);
+        int l2=st1.length();
+        st2=st.substring(k-1);
+        l=st2.length();
+       
+        c=st2.charAt(0);
+        a=Character.toUpperCase(c);
+        st4=st2.substring(1);
+        st3=st1+a+st4;
+    
+}
+
+        System.out.println(st3);
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String st,st1,st2,st3,st4;;st1="";st2="";st3="";st4="";
+        char c,a;
+        int k,l;
+              k=sc.nextInt();
+        sc.nextLine();
+        st=sc.nextLine();
+        int l1=st.length();
+  if(k<l1)
+  {
+        
+        st1=st.substring(0,k-1);
+        int l2=st1.length();
+        st2=st.substring(k-1);
+        l=st2.length();
+       
+        c=st2.charAt(0);
+        a=Character.toUpperCase(c);
+        st4=st2.substring(1);
+        st3=st1+a+st4;
+    
+}
+
+        System.out.println(st3);
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

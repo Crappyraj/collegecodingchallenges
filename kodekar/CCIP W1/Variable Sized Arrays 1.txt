@@ -1,0 +1,33 @@
+Variable Sized Arrays 1
+
+Consider an n-element array, a , where each index i in the array contains a reference to an array of k(i) integers (where the value of k(i) varies from array to array).
+
+Given a, you must answer q queries. Each query is in the format i j, where i denotes an index in array and denotes an index in the array located at a[i]. For each query, find and print the value of element j in the array at location a[i+1] on a new line.
+
+Click here to know more about how to create variable sized arrays in C++.
+
+Input Format
+
+The first line contains two space-separated integers denoting the respective values of n (the number of variable-length arrays) and q (the number of queries). Each line i of the n subsequent lines contains a space-separated sequence in the format k a[i]0 a[i]1 … a[i]k-1 describing the k-element array located at a[i]. Each of the q subsequent lines contains two space-separated integers describing the respective values of j (an index in array a[i+1]) and i(an index in the array referenced by a) for a query.
+
+Constraints
+
+All indices in this challenge are zero-based. All the given numbers are non negative and are not greater than 1000000.
+
+Output Format
+
+For each pair of i and j values (i.e., for each query), print a single integer that denotes the element located at index j of the array referenced by a[i+1]. There should be a total of q lines of output.
+
+NOTE ;- If j is negative print Invalid
+
+Sample Input 0
+
+2 2
+3 1 5 4
+5 1 2 8 9 3
+0 1
+1 3
+Sample Output 0
+
+4
+3

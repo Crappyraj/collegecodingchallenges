@@ -1,0 +1,67 @@
+Array Palindrome Problem
+
+
+
+Priyanka got an array as input and assigned a task to verify that the reversal of array gives the same array or not. If array and its reverse version both are same then print “ Verified” else print “ Not Verified”.
+
+Input Format
+
+Given the value of ‘n’ an array of size ‘n’ as input in two separate lines
+
+Constraints
+
+1<= n <= 20
+
+Output Format
+
+Print the output as Verified or Not Verified.
+
+Sample Input 0
+
+4
+1 2 2 1
+Sample Output 0
+
+Verified
+Sample Input 1
+
+4
+9 5 4 2
+Sample Output 1
+
+Not Verified
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int i,n,temp=0,t1=0;
+            n=sc.nextInt();
+        int a[]=new int[n];
+        int b[]=new int[20];
+        for(i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+             temp=a[i];
+}
+        for(i=n-1;i>=0;i--)
+        {
+            t1=a[i];
+        }
+            if(t1==temp)
+            {
+                System.out.println("Verified");
+}
+            else{
+                System.out.println("Not Verified");
+}
+        
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

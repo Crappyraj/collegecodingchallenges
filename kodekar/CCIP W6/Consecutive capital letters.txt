@@ -1,0 +1,62 @@
+Consecutive capital letters
+
+
+Kanishak got a task to find the two consecutive capital letters inside the string. If they exist return true else return false.
+
+Input Format
+
+Enter the string of size ‘n’.
+
+Constraints
+
+1<= n <= 20
+
+Output Format
+
+Print ‘Yes’ or ‘No’
+
+Sample Input 0
+
+arYAn
+Sample Output 0
+
+Yes
+Sample Input 1
+
+suDAma
+Sample Output 1
+
+Yes
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i,l,k=0;
+        String s;
+        s=sc.nextLine();
+        l=s.length();
+        for(i=0;i<l-1;i++)
+        {
+            char c1=s.charAt(i);
+            char c2=s.charAt(i+1);
+            if((c1>='A'&&c1<='Z')&&(c2>='A'&&c2<='Z'))
+               {
+                   k++;
+               }
+              
+                 
+}
+        if(k>=1)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

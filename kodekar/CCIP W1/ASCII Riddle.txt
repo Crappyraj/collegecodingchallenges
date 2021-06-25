@@ -1,0 +1,39 @@
+ASCII Riddle
+
+
+It's a RIIDLE doesn't need explanation.
+
+Input Format
+
+INPUT string s
+
+Constraints
+
+NOTHING
+
+Output Format
+
+In the form of String
+
+Sample Input 0
+
+hello@
+Sample Output 0
+
+HELLO@
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args)throws IOException {
+        InputStreamReader read=new InputStreamReader(System.in);
+        BufferedReader in=new BufferedReader(read);
+        String s,st;st="";
+            s=in.readLine();
+            s.toUpperCase();
+        System.out.println( s.toUpperCase());
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }

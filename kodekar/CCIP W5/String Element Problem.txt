@@ -1,0 +1,65 @@
+String element Problem
+
+
+
+Vishal got a task to verify that the given string contain “ra’ as substring or not.
+
+Input Format
+
+Input a string of length n.
+
+Constraints
+
+Nothing
+
+Output Format
+
+Print ‘Yes’ else ‘No’ accordingly.
+
+Sample Input 0
+
+aaryn
+Sample Output 0
+
+No
+Sample Input 1
+
+araa
+Sample Output 1
+
+Yes
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s;
+        char c1,c2;
+        int a=0;
+        s=sc.nextLine();
+        int l=s.length();
+        for(int i=0;i<l-1;i++)
+        {
+             c1=s.charAt(i);
+             c2=s.charAt(i+1);
+        
+            if(c1=='r' && c2=='a')
+            {
+                a++;
+            }
+           
+}
+        if(a==1)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+        
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

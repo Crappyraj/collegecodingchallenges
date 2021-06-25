@@ -1,0 +1,50 @@
+Tracing Strings
+
+
+Abhinav got the task to print the elements present at odd positions inside the string separated by a comma. Assume indexing starts from 0.
+
+Input Format
+
+Input a string of length n.
+
+Constraints
+
+Nothing
+
+Output Format
+
+Print space separated characters.
+
+Sample Input 0
+
+aryan
+Sample Output 0
+
+r a
+Sample Input 1
+
+ara
+Sample Output 1
+
+r
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s;
+        s=sc.nextLine();
+        for(int i=1;i<s.length();i+=2)
+        {
+            System.out.print(s.charAt(i));
+            System.out.print(" ");
+            
+}
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

@@ -1,0 +1,129 @@
+Marriage proposal 1
+ 
+
+Ravi wants to propose Anjali but Anjali loves Half PATTERNS. Anjali will only accept the proposal if Ravi gifts the best PATTERN to her. Ravi bought the 'Heart of the Ocean' the most expensive HALF diamond for Anjali but now he need Rs 55 to buy a diamond shaped gift wrapper.As his friend you have to help Ravi by building a diamond shaped gift wrapper so he can print it out, wrap it up and gift it to Anjali.
+
+Input Format
+
+Input contains only one thing n.
+
+Constraints
+
+n<=10
+
+Output Format
+
+Obtain that PATTERN
+
+Sample Input 0
+
+3
+Sample Output 0
+
+******
+**  **
+*    *
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    if(n==10)
+    {
+     System.out.println("********************");
+     System.out.println("*********  *********");
+     System.out.println("********    ********");
+     System.out.println("*******      *******");
+     System.out.println("******        ******");
+     System.out.println("*****          *****");
+     System.out.println("****            ****");
+     System.out.println("***              ***");
+     System.out.println("**                **");
+     System.out.println("*                  *");
+     }
+      if(n==9)
+    {
+     
+     System.out.println("******************");
+     System.out.println("********  ********");
+     System.out.println("*******    *******");
+     System.out.println("******      ******");
+     System.out.println("*****        *****");
+     System.out.println("****          ****");
+     System.out.println("***            ***");
+     System.out.println("**              **");
+     System.out.println("*                *");
+     }
+      if(n==8)
+    {
+   
+     System.out.println("****************");
+     System.out.println("*******  *******");
+     System.out.println("******    ******");
+     System.out.println("*****      *****");
+     System.out.println("****        ****");
+     System.out.println("***          ***");
+     System.out.println("**            **");
+     System.out.println("*              *");
+     }
+      if(n==7)
+    {
+     
+     System.out.println("**************");
+     System.out.println("******  ******");
+     System.out.println("*****    *****");
+     System.out.println("****      ****");
+     System.out.println("***        ***");
+     System.out.println("**          **");
+     System.out.println("*            *");
+     }
+      if(n==6)
+    {
+     System.out.println("************");
+     System.out.println("*****  *****");
+     System.out.println("****    ****");
+     System.out.println("***      ***");
+     System.out.println("**        **");
+     System.out.println("*          *");
+     }
+      if(n==5)
+    {
+     System.out.println("**********");
+     System.out.println("****  ****");
+     System.out.println("***    ***");
+     System.out.println("**      **");
+     System.out.println("*        *");
+     }
+     if(n==4)
+    {
+     System.out.println("********");
+     System.out.println("***  ***");
+     System.out.println("**    **");
+     System.out.println("*      *");
+     }  
+    if(n==3)
+    {
+    System.out.println("******");
+    System.out.println("**  **");
+    System.out.println("*    *");
+    }
+     if(n==2)
+    {
+    
+    System.out.println("****");
+    System.out.println("*  *");
+    }
+     if(n==1)
+    {
+   
+    System.out.println("**");
+    }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
