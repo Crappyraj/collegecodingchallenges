@@ -4,6 +4,7 @@ Input Format
 
 Enter the value ‘n’.
 
+
 Constraints
 
 1<= n <= 10
